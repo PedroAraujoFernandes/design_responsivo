@@ -1,0 +1,194 @@
+*{
+    @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap');
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+header{
+    background-color: rgb(194, 255, 174);
+    display: flex;
+    align-items: center;
+}
+
+main{
+    background-color: rgb(233, 233, 233);
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    border-bottom: 1px solid gray;
+}
+
+main a{
+    padding: 1%;
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+}
+
+main nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+main nav :hover{
+    transition: color 0.5s;
+    color: rgb(42, 241, 42);
+}
+
+main section{
+    padding: 2%;
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(55, 111, 0);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+
+.comentario{
+    padding: 5px;
+    background-color: rgb(194, 255, 174);
+}
+
+.comentario form{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.comentario textarea{
+    height: 120px;
+    width: 400px;
+}
+
+.coment{
+    background-color: white;
+    border-radius: 12px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.botao{
+    margin: 1rem;
+    background-color: greenyellow;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 2em;
+    box-shadow: 1px 1px 2px gray;
+}
+
+.botao:active{
+    color: white;
+    background-color: green;
+}
+
+.elemento{
+    background-color: rgb(194, 255, 174);
+    border-radius: 12px;
+    box-shadow: 2px 4px 3px gray;
+    padding: 1vh;
+    width: 20%;
+
+    transition: color 1s, background-color 1s;
+}
+
+.elemento:hover{
+    color: white;
+    background-color: green;
+    
+}
+
+aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media(width < 800px){
+    h2{
+        font-size: 3rem;
+    }
+
+}
+
+@media(width < 600px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media(width < 600px){
+    header{
+        justify-content: center;
+    }
+}
+
+
+@media(width < 600px){
+    main nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(width < 800px){
+    main a{
+        margin: 1rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media(width < 850px){
+    .comentario form{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+    .comentario textarea{
+        width: 80%;
+        font-size: 2rem;
+    }
+    
+    .comentario input{
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    .botao{
+        background-color: greenyellow;
+        font-size: 2rem;
+    }
+
+}
+
+@media(width < 900px){
+    aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .elemento{
+        margin: 15px;
+        width: 80%;
+    }
+}

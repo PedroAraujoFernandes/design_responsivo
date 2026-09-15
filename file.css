@@ -1,52 +1,58 @@
-*{
-    @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap');
-}
-
 body{
     margin: 0px;
     padding: 0px;
     box-sizing: content-box;
 }
 
-header{
+.header{
     background-color: rgb(194, 255, 174);
     display: flex;
     align-items: center;
 }
 
-main{
+.header__logo{
+    color: white;
+    padding: 2rem;
+}
+
+.header__logo--hover:hover{
+    transition: color 2s;
+    color: green;
+
+}
+
+.main{
     background-color: rgb(233, 233, 233);
     display: grid;
     grid-template-rows: 0.1fr 1fr;
     border-bottom: 1px solid gray;
 }
 
-main a{
-    padding: 1%;
-    color: black;
-    font-size: 1rem;
-    text-decoration: none;
-    border-bottom: 1px solid gray;
+.section{
+    text-align: center;
+    padding: 1rem;
 }
 
-main nav{
+.main__nav{
     display: flex;
     justify-content: space-around;
-    align-items: center;
     background-color: white;
 }
 
-main nav :hover{
+.main__link{
+    color: black;
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+
+.main__link--hover:hover{
     transition: color 0.5s;
     color: rgb(42, 241, 42);
 }
 
-main section{
-    padding: 2%;
-    text-align: center;
-}
-
-footer{
+.footer{
     background-color: rgb(55, 111, 0);
     display: flex;
     flex-direction: column;
@@ -58,21 +64,13 @@ footer{
 
 .comentario{
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(194, 255, 174);
 }
 
-.comentario form{
-    display: flex;
-    align-items: baseline;
-    flex-direction: column;
-}
-
-.comentario textarea{
-    height: 120px;
-    width: 400px;
-}
-
-.coment{
+.comentario__caixa{
     background-color: white;
     border-radius: 12px;
     padding: 5px;
@@ -81,19 +79,63 @@ footer{
 
 .botao{
     margin: 1rem;
-    background-color: greenyellow;
     border: none;
     padding: 0.5rem 2rem;
-    border-radius: 2em;
-    box-shadow: 1px 1px 2px gray;
+    border-radius: 0.4rem;
 }
 
-.botao:active{
+.comentario__botao{
     color: white;
     background-color: green;
 }
 
-.elemento{
+.comentario__botao--active:active{
+    background-color: darkgreen;
+    color: gainsboro;
+    
+}
+
+.form__botao--active:active{
+    background-color: darkcyan;
+    color: gainsboro;
+}
+
+.form{
+    display: flex;
+    background-color: coral;
+    border-top: 1px solid gray;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: start;
+}
+
+.form__input{
+    width: 30%;
+    height: 1.4rem;
+}
+
+.form__comentario{
+    width: 60%;
+    scrollbar-width: none;
+    font-size: 1rem;
+    height: 6rem;
+}
+
+.form__botao{
+    color: white; 
+    background-color: rgb(2, 177, 177);
+
+}
+
+.aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem;
+}
+
+.aside__class{
     background-color: rgb(194, 255, 174);
     border-radius: 12px;
     box-shadow: 2px 4px 3px gray;
@@ -103,91 +145,81 @@ footer{
     transition: color 1s, background-color 1s;
 }
 
-.elemento:hover{
+.aside__class--action:hover{
     color: white;
     background-color: green;
     
 }
 
-aside{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    padding: 2rem;
+.footer__endereco{
+    margin: 0.4rem;
 }
 
 @media(width < 800px){
     h2{
         font-size: 3rem;
     }
-
 }
 
 @media(width < 600px){
-    main{
+    .main{
         display: flex;
         flex-direction: column;
+    }
+
+     .main__nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
 
 
 @media(width < 600px){
-    header{
+    .header{
         justify-content: center;
     }
 }
 
-
-@media(width < 600px){
-    main nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 @media(width < 800px){
-    main a{
+    .main__link{
         margin: 1rem;
         font-size: 1.4rem;
     }
 }
 
 @media(width < 850px){
-    .comentario form{  
-    display: flex;
+    .form{  
+        display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
     font-size: 2rem;
 }
-
-    .comentario textarea{
+    .form__comentario{
         width: 80%;
         font-size: 2rem;
     }
     
-    .comentario input{
+    .form__input{
         width: 80%;
         font-size: 2rem;
     }
 
     .botao{
-        background-color: greenyellow;
         font-size: 2rem;
     }
 
 }
 
 @media(width < 900px){
-    aside{
+    .aside{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .elemento{
+    .aside__class{
         margin: 15px;
         width: 80%;
     }

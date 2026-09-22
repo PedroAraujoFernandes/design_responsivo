@@ -121,6 +121,7 @@ body {
   border-radius: 5px;
   width: 60%;
   font-size: 12px;
+  border-bottom: 1px solid gray;
   height: 6rem;
 }
 .form__botao {

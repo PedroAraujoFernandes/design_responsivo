@@ -19,6 +19,7 @@
     @include mixins.borda_arredondada;
     width: 60%;
     font-size: variaveis.$tamanho-da-fonte-pequeno;
+    border-bottom: variaveis.$borda-baixa;
     height: 6rem;
     }
 

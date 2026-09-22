@@ -24,12 +24,11 @@
     display: grid;
     grid-template-rows: 0.1fr 1fr;
     border-bottom: variaveis.$borda-baixa;
-
-     &__nav{
+    
+    &__nav{
         @include mixins.flex-predefinicao-row;
         justify-content: space-around;
         background-color: white;
-
      }
 
      &__link{

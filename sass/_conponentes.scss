@@ -1,0 +1,35 @@
+@use "variaveis";
+@use "mixins";
+
+.form{
+    @include mixins.flex-predefinicao-clumn;
+    background-color: variaveis.$cor-primaria;
+    border-top: 1px solid variaveis.$cor-secundaria;
+    padding: variaveis.$padding-baixo;
+    align-items: start;
+
+    &__input{
+    @include mixins.borda_arredondada;
+    border: variaveis.$borda-baixa;
+    width: 30%;
+    height: 1.4rem;
+}
+
+    &__comentario{
+    @include mixins.borda_arredondada;
+    width: 60%;
+    font-size: variaveis.$tamanho-da-fonte-pequeno;
+    height: 6rem;
+    }
+
+    &__botao{
+    @include mixins.botao__padrao;
+    @include mixins.borda_arredondada(4px);
+    background-color: rgb(2, 177, 177);
+    }
+}
+
+.section{
+    padding: variaveis.$padding-baixo;
+    text-align: center;
+}

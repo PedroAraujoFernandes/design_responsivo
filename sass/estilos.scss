@@ -1,0 +1,73 @@
+@use "variaveis";
+@use "mixins";
+@use "layout";
+@use "conponentes";
+
+
+@media(width < 800px){
+    h2{
+        font-size: variaveis.$tamanho-da-fonte-grande;
+    }
+}
+
+@media(width < 720px){
+    .main{
+    @include mixins.flex-predefinicao-clumn;
+    }
+
+     .main__nav{
+        display: grid;
+        grid-template-rows: 0.1fr 0.1fr;
+        text-align: center;
+    }
+}
+
+
+@media(width < 600px){
+    .header{
+        justify-content: center;
+    }
+}
+
+@media(width < 800px){
+    .main__link{
+        margin: variaveis.$margin-baixa;
+        font-size: variaveis.$tamanho-da-fonte-medio;
+        border-bottom: variaveis.$borda-baixa;
+    }
+}
+
+@media(width < 850px){
+    .form{  
+    @include mixins.flex-predefinicao-clumn;
+    justify-content: center;
+    align-items: center;
+    font-size: variaveis.$tamanho-da-fonte-pequeno * 3;
+}
+    .form__comentario{
+        width: 80%;
+        font-size: variaveis.$tamanho-da-fonte-medio;
+    }
+    
+    .form__input{
+        width: 80%;
+        font-size: variaveis.$tamanho-da-fonte-medio;
+    }
+
+    .botao{
+        font-size: variaveis.$tamanho-da-fonte-medio;
+    }
+
+}
+
+@media(width < 900px){
+    .aside{
+        @include mixins.flex-predefinicao-clumn;
+        align-items: center;
+    }
+
+    .aside__class{
+        margin: 15px;
+        width: 80%;
+    }
+}

@@ -1,0 +1,111 @@
+@use"variaveis";
+@use "mixins";
+@use "base";
+
+.header{
+    @include mixins.flex-predefinicao-row;
+    background-color: variaveis.$cor-primaria;
+    align-items: center;
+
+    &__logo{
+    color: white;
+    padding: variaveis.$padding-baixo;
+}
+
+&__logo--hover:hover{
+    transition: color 2s;
+    color: variaveis.$cor-transicao;
+    }
+
+}
+
+.main{
+    background-color: variaveis.$cor-secundaria;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    border-bottom: variaveis.$borda-baixa;
+
+     &__nav{
+        @include mixins.flex-predefinicao-row;
+        justify-content: space-around;
+        background-color: white;
+
+     }
+
+     &__link{
+    color: variaveis.$cor-texto;
+    padding: variaveis.$padding-baixo;
+    font-size: variaveis.$tamanho-da-fonte-pequeno * 2;
+    text-decoration: none;
+    border-bottom: variaveis.$borda-baixa;
+     }
+
+     &__link--hover:hover{
+    transition: color 0.5s;
+    color: rgb(198, 255, 113);
+    }
+
+}
+
+.section{
+    padding: variaveis.$padding-baixo;
+    text-align: center;
+}
+
+.aside{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: variaveis.$padding-medio;
+
+    &__class{
+        @include mixins.borda_arredondada(5px);
+        background-color: white;
+        padding: variaveis.$padding-baixo;
+        width: 20%;
+
+        transition: color 1s, background-color 1s;
+    }
+
+    &__class--action:hover{
+        background-color: variaveis.$cor-transicao;
+        color: white;
+
+    }
+}
+
+
+.comentario{
+    @include mixins.flex-predefinicao-clumn;
+    padding: variaveis.$padding-baixo;
+    align-items: center;
+    background-color: variaveis.$cor-primaria;
+    border-bottom: variaveis.$borda-baixa;
+
+    &__caixa{
+    @include mixins.borda_arredondada(5px);
+    background-color: white;
+    padding: variaveis.$padding-baixo;
+    margin: variaveis.$margin-baixa;
+    }
+
+    &__botao{
+    @include mixins.botao__padrao;
+    @include mixins.borda_arredondada(3px);
+    background-color: variaveis.$cor-transicao;
+    }
+
+    &__botao--active:active{
+    background-color: darkgreen;
+    color: gainsboro;
+    }
+}
+
+.footer{
+    @include mixins.flex-predefinicao-clumn;
+    background-color: variaveis.$cor-transicao;
+    padding: variaveis.$padding-medio;
+    font-size: variaveis.$tamanho-da-fonte-pequeno;
+    text-align: center;
+    color: white;
+}

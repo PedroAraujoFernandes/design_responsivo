@@ -1,0 +1,228 @@
+/*
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+.header{
+    background-color: rgb(194, 255, 174);
+    display: flex;
+    align-items: center;
+}
+
+.header__logo{
+    color: white;
+    padding: 2rem;
+}
+
+.header__logo--hover:hover{
+    transition: color 2s;
+    color: green;
+
+}
+
+.main{
+    background-color: rgb(233, 233, 233);
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    border-bottom: 1px solid gray;
+}
+
+.section{
+    text-align: center;
+    padding: 1rem;
+}
+
+.main__nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.main__link{
+    color: black;
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+
+.main__link--hover:hover{
+    transition: color 0.5s;
+    color: rgb(42, 241, 42);
+}
+
+.footer{
+    background-color: rgb(55, 111, 0);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+
+.comentario{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(194, 255, 174);
+}
+
+.comentario__caixa{
+    background-color: white;
+    border-radius: 12px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.botao{
+    margin: 1rem;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 0.4rem;
+}
+
+.comentario__botao{
+    color: white;
+    background-color: green;
+}
+
+.comentario__botao--active:active{
+    background-color: darkgreen;
+    color: gainsboro;
+    
+}
+
+.form__botao--active:active{
+    background-color: darkcyan;
+    color: gainsboro;
+}
+
+.form{
+    display: flex;
+    background-color: coral;
+    border-top: 1px solid gray;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: start;
+}
+
+.form__input{
+    width: 30%;
+    height: 1.4rem;
+}
+
+.form__comentario{
+    width: 60%;
+    scrollbar-width: none;
+    font-size: 1rem;
+    height: 6rem;
+}
+
+.form__botao{
+    color: white; 
+    background-color: rgb(2, 177, 177);
+
+}
+
+.aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem;
+}
+
+.aside__class{
+    background-color: rgb(194, 255, 174);
+    border-radius: 12px;
+    box-shadow: 2px 4px 3px gray;
+    padding: 1vh;
+    width: 20%;
+
+    transition: color 1s, background-color 1s;
+}
+
+.aside__class--action:hover{
+    color: white;
+    background-color: green;
+    
+}
+
+.footer__endereco{
+    margin: 0.4rem;
+}
+
+@media(width < 800px){
+    h2{
+        font-size: 3rem;
+    }
+}
+
+@media(width < 600px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+     .main__nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media(width < 600px){
+    .header{
+        justify-content: center;
+    }
+}
+
+@media(width < 800px){
+    .main__link{
+        margin: 1rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media(width < 850px){
+    .form{  
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+    .form__comentario{
+        width: 80%;
+        font-size: 2rem;
+    }
+    
+    .form__input{
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    .botao{
+        font-size: 2rem;
+    }
+
+}
+
+@media(width < 900px){
+    .aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside__class{
+        margin: 15px;
+        width: 80%;
+    }
+}
+*/
